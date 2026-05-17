@@ -34,8 +34,8 @@ public class CartPopupAppearsAfterClickingBuyButtonTest {
                     "[.//a[contains(.,'%s')]]//button[@type = 'submit']", productName))));
             cartButton.click();
 
-            By xPathPopupTitle = By.xpath("//div[@id = 'minicart-content-wrapper']//span[contains(.,'Кошик')]");
-            WebElement cartPopup = waiter.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@id = 'minicart-content-wrapper']")));
+            By xPathPopupTitle = By.xpath("//div[@id = 'minicart-content-wrapper']");
+            WebElement cartPopup = waiter.until(ExpectedConditions.visibilityOfElementLocated(xPathPopupTitle));
             Assert.assertTrue(cartPopup.getText().contains("Кошик"));
         } finally {
             driver.quit();

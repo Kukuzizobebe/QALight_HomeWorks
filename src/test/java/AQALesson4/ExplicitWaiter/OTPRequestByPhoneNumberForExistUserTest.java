@@ -26,9 +26,6 @@ public class OTPRequestByPhoneNumberForExistUserTest {
                     "and contains(.,'Особистий кабінет')]")));
             authorizeButton.click();
 
-            WebElement authorizePopup = waiter.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(@class,'social-login " +
-                    "block-container authentication')]")));
-
             WebElement phoneInput = waiter.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@data-type='tel']")));
 
             phoneInput.sendKeys(selectedPhoneNumber);
@@ -39,7 +36,7 @@ public class OTPRequestByPhoneNumberForExistUserTest {
 
             String textInFieldForOTP = "Введіть код із повідомлення";
             WebElement otpField = waiter.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@name='password']")));
-            Assert.assertEquals("Введіть код із повідомлення", otpField.getAttribute("placeholder"));
+            Assert.assertEquals(textInFieldForOTP, otpField.getAttribute("placeholder"));
 
         } finally {
             driver.quit();
