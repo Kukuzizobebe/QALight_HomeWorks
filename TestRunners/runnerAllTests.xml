@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+    <test name="Test">
+        <packages>
+            <package name="AQALesson5.NegativeTests"/>
+            <package name="AQALesson5.PositiveTests"/>
+        </packages>
+    </test>
+</suite>

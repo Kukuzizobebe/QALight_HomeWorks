@@ -1,4 +1,4 @@
-package AQALesson3;
+package ua.QALightCourse.AQALesson3;
 
 import junit.framework.Assert;
 import org.openqa.selenium.By;

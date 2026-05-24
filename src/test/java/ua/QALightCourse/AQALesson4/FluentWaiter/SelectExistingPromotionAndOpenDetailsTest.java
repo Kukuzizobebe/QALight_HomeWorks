@@ -1,4 +1,4 @@
-package AQALesson4.FluentWaiter;
+package ua.QALightCourse.AQALesson4.FluentWaiter;
 
 import junit.framework.Assert;
 import org.openqa.selenium.By;

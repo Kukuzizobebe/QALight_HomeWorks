@@ -1,4 +1,4 @@
-package AQALesson4.ImplicitWaiter;
+package ua.QALightCourse.AQALesson4.ImplicitWaiter;
 
 import junit.framework.Assert;
 import org.openqa.selenium.By;
