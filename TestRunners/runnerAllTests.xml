@@ -9,5 +9,4 @@
             <class name="ua.QALightCourse.AQALesson7.servicessearchtest.ServiceSearchPositiveTest"/>
         </classes>
     </test>
-
 </suite>
