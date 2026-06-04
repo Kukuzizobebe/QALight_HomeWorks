@@ -5,9 +5,9 @@ import java.sql.*;
 public class GetTableInfo {
 
     public static void main(String[] args) {
-        final String URL = "jdbc:mysql://109.197.216.90:13306/ATAM_db";
-        final String userName = "root";
-        final String dbPassword = "6Ztz3rsrVNeWfbCH";
+        final String URL = "";
+        final String userName = "";
+        final String dbPassword = "";
 
         String tableName = "Rud_usersDataTable";
         String query = "SELECT * FROM " + tableName;
