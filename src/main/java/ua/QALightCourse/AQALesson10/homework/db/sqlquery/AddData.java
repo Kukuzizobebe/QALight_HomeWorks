@@ -7,9 +7,9 @@ import java.sql.SQLException;
 
 public class AddData {
     public static void main(String[] args) {
-        final String URL = "jdbc:mysql://109.197.216.90:13306/ATAM_db";
-        final String userName = "root";
-        final String dbPassword = "6Ztz3rsrVNeWfbCH";
+        final String URL = "";
+        final String userName = "";
+        final String dbPassword = "";
 
         String userEmail = "email@example.com";
         String userPassword = "Password1";
