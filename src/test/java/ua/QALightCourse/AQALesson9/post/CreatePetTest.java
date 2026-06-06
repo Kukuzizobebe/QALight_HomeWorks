@@ -1,5 +1,6 @@
 package ua.QALightCourse.AQALesson9.post;
 
+import io.restassured.filter.log.ResponseLoggingFilter;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import org.testng.Assert;
@@ -46,7 +47,7 @@ public class CreatePetTest {
         PetDto createdPetDto = createdPetResponse.as(PetDto.class);
         Assert.assertEquals(createdPetDto.getId(),petIdToCreate);
 
-        Response previuoslyCreatedPetResponse = given().get("https://petstore.swagger.io/v2/pet/"+petIdToCreate);
+        Response previuoslyCreatedPetResponse = given().filter(new ResponseLoggingFilter()).get("https://petstore.swagger.io/v2/pet/"+petIdToCreate);
         PetDto previuoslyCreatedPetDto = previuoslyCreatedPetResponse.as(PetDto.class);
 
         Assert.assertEquals(previuoslyCreatedPetDto.getId(),petIdToCreate);
