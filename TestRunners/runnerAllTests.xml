@@ -2,11 +2,8 @@
 
 <suite name="Suite">
     <test name="Test">
-        <classes>
-            <class name="ua.QALightCourse.AQALesson7.downloadapplicationtest.DownloadApplicationPositiveTest"/>
-            <class name="ua.QALightCourse.AQALesson7.questionsanswerstest.QuestionAnswersNegativeTest"/>
-            <class name="ua.QALightCourse.AQALesson7.questionsanswerstest.QuestionAnswersPositiveTest"/>
-            <class name="ua.QALightCourse.AQALesson7.servicessearchtest.ServiceSearchPositiveTest"/>
-        </classes>
+        <packages>
+            <package name="ua.QALightCourse.AQALesson9"/>
+        </packages>
     </test>
 </suite>
