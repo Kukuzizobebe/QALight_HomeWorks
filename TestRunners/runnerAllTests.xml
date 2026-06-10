@@ -3,7 +3,10 @@
 <suite name="Suite">
     <test name="Test">
         <packages>
-            <package name="ua.QALightCourse.AQALesson9"/>
+            <package name="ua.QALightCourse.AQALesson9.post"/>
+            <package name="ua.QALightCourse.AQALesson9.get"/>
+            <package name="ua.QALightCourse.AQALesson9.put"/>
+            <package name="ua.QALightCourse.AQALesson9.delete"/>
         </packages>
     </test>
 </suite>
